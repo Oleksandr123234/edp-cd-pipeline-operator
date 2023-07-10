@@ -40,7 +40,7 @@ Under the hood, the autodeploy logic is implemented in the following way:
 
 The scheme below illustrates the logic of the autodeploy feature in the Jenkins deploy scenario:
 
-!![Autodeploy in Jenkins deploy scenario](../puml/autodeploy_jenkins.png "Autodeploy in Jenkins deploy scenario")
+![Autodeploy in Jenkins deploy scenario](https://github.com/Oleksandr123234/edp-cd-pipeline-operator/blob/Oleksandr123234-patch-1/docs/puml/autodeploy_jenkins.png "Autodeploy in Jenkins deploy scenario")
 
 Overall, autodeploy in Jenkins can be explained in the following way:
 
