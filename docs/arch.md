@@ -21,7 +21,7 @@ Autodeploy logic differs depending on the CI tool that is used for EDP, whether 
 The scheme below illustrates how autodeploy works in the Tekton deploy scenario:
 
   For Tekton deploy scenario:
-  ![Autodeploy in Tekton deploy scenario]([../puml/autodeploy_argo_cd.png "Autodeploy in Tekton deploy scenario"](https://github.com/Oleksandr123234/edp-cd-pipeline-operator/blob/Oleksandr123234-patch-1/docs/puml/autodeploy_argo_cd.png))
+  ![Autodeploy in Tekton deploy scenario](https://github.com/Oleksandr123234/edp-cd-pipeline-operator/blob/Oleksandr123234-patch-1/docs/puml/autodeploy_argo_cd.png)
 
 
 Under the hood, the autodeploy logic is implemented in the following way:
