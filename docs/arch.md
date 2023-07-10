@@ -33,8 +33,7 @@ Under the hood, the autodeploy logic is implemented in the following way:
 4. The **codebase-operator** retrieves the new tag from the **CDStageDeploy** resource and updates the image tag in Argo CD.
 5. Lastly, Argo CD deploys the newer image.
 
-!!! note
-    In Tekton deploy scenario, autodeploy will start working only after the first manual deploy.
+**Note:**  In Tekton deploy scenario, autodeploy will start working only after the first manual deploy.
 
 
 ### Autodeploy in Jenkins
