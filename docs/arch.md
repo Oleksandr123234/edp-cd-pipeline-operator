@@ -8,7 +8,6 @@ An Image of the HEAD of the current branch will be displayed as a result of an I
 If you are in the detached mode, use the sources to get the required version of diagrams.
 
 
-
 ## Autodeploy Overview
 
 Autodeploy is designed to accelerate development process by automatically deploying new application builds to the environment, be it development or production. As a result, developers only need to click the Build button for the application in Headlamp.
@@ -22,7 +21,7 @@ Autodeploy logic differs depending on the CI tool that is used for EDP, whether 
 The scheme below illustrates how autodeploy works in the Tekton deploy scenario:
 
   For Tekton deploy scenario:
-  !![Autodeploy in Tekton deploy scenario](../assets/headlamp-user-guide/autodeploy_argo_cd.png "Autodeploy in Tekton deploy scenario")
+  !![Autodeploy in Tekton deploy scenario](../puml/autodeploy_argo_cd.png "Autodeploy in Tekton deploy scenario")
 
 
 Under the hood, the autodeploy logic is implemented in the following way:
@@ -41,7 +40,7 @@ Under the hood, the autodeploy logic is implemented in the following way:
 
 The scheme below illustrates the logic of the autodeploy feature in the Jenkins deploy scenario:
 
-!![Autodeploy in Jenkins deploy scenario](../assets/headlamp-user-guide/autodeploy_jenkins.png "Autodeploy in Jenkins deploy scenario")
+!![Autodeploy in Jenkins deploy scenario](../puml/autodeploy_jenkins.png "Autodeploy in Jenkins deploy scenario")
 
 Overall, autodeploy in Jenkins can be explained in the following way:
 
@@ -59,8 +58,7 @@ To enable autodeploy, users need to add the stage to the CD pipeline that has th
 
 After autodeploy is configured, further application versions will be automatically deployed after successful application build.
 
-!!! note
-    Autodeploy will start working only after the first manual deploy.
+**Note:** This is a note block example. Autodeploy will start working only after the first manual deploy.
 
 
 
