@@ -17,12 +17,12 @@ Autodeploy logic differs depending on the CI tool that is used for EDP, whether 
 
 The scheme below illustrates how autodeploy works in the Tekton deploy scenario:
 
-![Autodeploy in Tekton deploy scenario](https://github.com/Oleksandr123234/edp-cd-pipeline-operator/blob/Oleksandr123234-patch-1/docs/puml/autodeploy_argo_cd.png)
+![Autodeploy in Tekton deploy scenario](https://github.com/epam/edp-cd-pipeline-operator/blob/master/docs/puml/autodeploy_argo_cd.png)
 
 Under the hood, the autodeploy logic is implemented in the following way:
 
 1. User clicks the **Build** button or merges patch to VCS.
-2. If the build is successful, new tag is appended to the **CodebaseImageStream** resource.
+2. As a result of the build pipeline, a new version of the artifact is available for the application.
 3. The **codebase-operator** detects the new tag and creates the **CDStageDeploy** with this tag.
 4. The **codebase-operator** retrieves the new tag from the **CDStageDeploy** resource and updates the image tag in Argo CD.
 5. Lastly, Argo CD deploys the newer image.
@@ -33,7 +33,7 @@ Under the hood, the autodeploy logic is implemented in the following way:
 
 The scheme below illustrates the logic of the autodeploy feature in the Jenkins deploy scenario:
 
-![Autodeploy in Jenkins deploy scenario](https://github.com/Oleksandr123234/edp-cd-pipeline-operator/blob/Oleksandr123234-patch-1/docs/puml/autodeploy_jenkins.png "Autodeploy in Jenkins deploy scenario")
+![Autodeploy in Jenkins deploy scenario](https://github.com/epam/edp-cd-pipeline-operator/blob/master/docs/puml/autodeploy_jenkins.png "Autodeploy in Jenkins deploy scenario")
 
 Overall, autodeploy in Jenkins can be explained in the following way:
 
